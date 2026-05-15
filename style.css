@@ -1,0 +1,5 @@
+.lalala {background-image: url(4.jpg); background-repeat: no-repeat; background-size: cover;}
+.dog {display: flex; justify-content: space-around; border: 10px solid bisque; 
+    border-radius: 20px; background-color: rgb(251, 221, 175);}
+   ul li a {text-decoration: none;}
+ul li {list-style: none;}

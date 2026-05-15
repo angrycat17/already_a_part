@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+body {background-color: rgb(238, 131, 119);}
+.main {display: flex;}
+.main div {width:50% ;}
+.meny {display: flex; justify-content: space-around; width: 500px; padding-left: 0px;}
+.meny li a {text-decoration: none; color: black;}
+.meny li {list-style: none;}
+.left {padding-left: 40px; width: 45% !important;}
+.datacone {width: 730px !important; font-size: 35px; padding-top: 0px; padding-left: 3%; }
+.datacone form {display: flex; flex-direction: column; justify-content: space-around; height: 100px;}
+    .color {background-color: rgb(255, 187, 0);font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal; width: 340px;}
+  #id {display: flex; justify-content: space-around;}
+  .flex {display: flex; width: 500px !important;}
+  .downtext {font-size: 10px; width: 385px !important;}
+  .downtextlable {font-size: 30px; width: 300px !important; word-spacing: 7px;
+    letter-spacing: 1px;}
+  .links {display: flex; color: aliceblue;list-style: none; padding-right: 20px; padding-left: 0px; padding-top: 0px; justify-content: space-around !important; align-items: center; text-decoration: none;}
+  .circle { padding-left: 10px; background-color: black; border-radius: 10px; display: flex; width: 130px; height: 40px; align-items: center;}
+  .circle a, .square a {color: aliceblue;}
+  ul li a {text-decoration: none;}
+  .mycircle {
+  width: 20px !important;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.mysquare {
+  width: 20px !important;
+  height: 20px;
+  background: rgb(255, 255, 255);
+}
+ul.active {
+    display: flex;
+  }
+
+  .square { padding-left: 10px; background-color: black; display: flex; border-radius: 10px; width: 130px; height: 40px; align-items: center;}
+  ul {width: 300px;}
+  .text {padding-top: 30px;}
+  .right {width: 55% !important;}
+  @media (min-width:320px) and (max-width:560px) {
+
+    body {background-color: blueviolet; overflow-x: hidden; max-width: 430px;}
+    .main{
+        flex-direction: column;
+        height: 1900px;
+    }
+    .right {width: 100% !important;}
+    .left {padding-left: 0px !important; width: 100% !important;} 
+    .meny {width: 100%; flex-direction: column; font-size: 30px; display: none; }
+    .maintext {width: 87% !important;}
+    #meny {text-align: center;}
+    .maintext img {width: 110% !important;}
+    .flex {width: 100% !important; flex-direction: column;}
+    .flex img {transform: rotate(90deg);}
+    .datacone {width: 100% !important; padding-left: 0px !important;}
+    .downtext {width: 390px !important;
+        text-align: justify;
+         margin: 0 auto; font-size: 23px; display: flex; flex-direction: column ;}
+    .downtext div {width: 350px ;}
+    .flex form {width: 95% !important; height: 160px !important;}
+    .flex form input {height: 28px; font-size: 25px; margin-top: 8px;}
+    .color {height: 28px; width: 100% !important; margin-top: 8px; font-size: 22px;}
+    .links {font-size: 50px; padding: 20px; margin: 0px; display: flex; }
+    .indatacone {width: 300px !important; font-size: 40px;}
+    .square {margin-left: 6%;}
+    .downtextlable { 
+        padding-top: 20px;
+    padding-left: 2.5%;
+    font-size: 40px;
+    width: 98% !important;
+    }
+  }
+  @media (min-width:341px) and (max-width:360px) {
+.downtext {width: 97% !important;}
+
+  }
+  @media (min-width:390px) and (max-width:420px) {
+.downtext {width: 97% !important;}
+
+  }
+  @media (max-width: 768px) {
+  .ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+
+  .ul.active {
+    display: flex;
+  }
+
+  .meny {
+    display: none;
+  }
+
+}
+@media (min-width: 980px) {
+ .burger {display: none;}
+
+}
+
+ 
+    </style>
+    <div class="main">
+
+    <div class="left"> 
+        <ul class="meny" id="meny"> 
+            <li><a href=""> About </a></li>
+            <li><a href=""> Benefits </a></li>
+            <li><a href=""> Gallery </a></li>
+            <li><a href=""> Prises </a></li>
+            <li><a href=""> Events </a></li>
+            <li><a href=""> Contact </a></li>
+            
+        </ul>
+
+        <button class="burger" id="burger">
+    ☰
+  </button>
+</header>
+<script>
+
+  const burger = document.getElementById('burger');
+  const ul = document.getElementById('meny');
+
+  burger.addEventListener('click', () => {
+
+    ul.classList.toggle('active');
+  });
+</script>
+         
+       <div class="maintext" style="width: 460px;"> <img class="text" width="100%" src="text.png"> 
+       </div>
+       <div class="datacone">
+        <div class="indatacone"  height="200px"> <span> Sign up now and participate </span>
+          <span>  in the singles dinner: </span> </div>
+     <div class="flex">
+            <form action="contaxs.html" style="width: 340px;">
+            <input type="text" placeholder="Name">
+            
+            <input type="text" placeholder="Email"> 
+            <button class="color"> NEXT STEP </button> 
+            
+            </form>
+            <img width="150px" src="hand.png"> 
+     </div>
+     <div class="downtext">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+     </div>
+     <div class="downtextlable" width="300px" style="padding-top: 20px;">
+        The best singles app
+     </div>
+     <div>
+        <ul class="links">
+            <li class="circle">  
+                <div class="mycircle"> </div> <a href="https://play.google.com/"> <span style="font-size: 12px; display: block; padding-left: 10px;">Download on the </span> <span style="font-size: 18px;display: block; padding-left: 10px;">Circle Store </span></a> 
+            </li>
+            <li class="square"> 
+                <div class="mysquare"> </div>  <a href="https://apps.apple.com/"> <span style="font-size: 12px;display: block; padding-left: 10px;"> Download on the </span> <span style="font-size: 18px;display: block; padding-left: 10px;">Square Store </span></a> 
+            </li>
+        </ul>
+     </div>
+       </div>
+    </div>
+    
+    <div class="right">
+        <img width="100%" src="wriht.png" alt="">
+        
+    </div>
+
+    </div>
+    </body>
+</html>
